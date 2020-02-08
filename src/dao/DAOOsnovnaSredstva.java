@@ -26,7 +26,7 @@ public class DAOOsnovnaSredstva implements daoInterface<OsnovnaSredstva> {
 	@Override
 	public void izmeni(OsnovnaSredstva t) {
 		System.out.println("Unesite onsovno sredstvo:");
-	Scanner = new Scanner(System.in);
+	
 		
 	}
 
