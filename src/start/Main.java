@@ -1,6 +1,5 @@
-package main;
+package start;
 
 public class Main {
-
 
 }

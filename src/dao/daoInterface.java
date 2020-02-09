@@ -3,19 +3,16 @@ package dao;
 import java.util.List;
 import java.util.Optional;
 
-public interface daoInterface <T> {
+import exceptions.DataAlreadyExists;
+import exceptions.DataNotFoundException;
 
-	
-	public Optional<T> vrati(T t);
+public interface DaoInterface<T> {
 
-	public void izmeni(T t);
-
-	public void dodaj(T t);
-	
-	public void obrisi(T t);
-	
-	public List<T> vratiSve();
-	
-	
+	public void add(T t) throws  DataAlreadyExists;
+	public void delete(T t) throws DataNotFoundException;
+	public void izmeni(T t) throws DataNotFoundException;
+	public Optional<T> returnOne(T t);
+	public List<T> returnAll();
+	public void printAll();
 	
 }
